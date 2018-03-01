@@ -70,6 +70,10 @@ header a:focus {
     color: black;
 }
 
+.active {
+    color: black;
+}
+
 #logo {
     font-family: 'Raleway', sans-serif;
     font-size: 1.7em;

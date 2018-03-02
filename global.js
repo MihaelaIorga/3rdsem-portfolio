@@ -21,3 +21,6 @@ document.querySelector(".clickcontact").onclick = function (e) {
     document.querySelectorAll('nav a').forEach(removeActive);
     e.target.classList.add('active');
 }
+
+
+//fade in page

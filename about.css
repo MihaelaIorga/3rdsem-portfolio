@@ -1,4 +1,42 @@
-.headline {
-    height: 80%;
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.headline2 {
+    height: auto;
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.headline2 h1 {
+    font-size: 3.2em;
+    padding-top: 3.9em;
+    padding-bottom: 3.9em;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: left;
+    padding-top: 3em;
+    max-width: 700px;
+}
+
+.paragraph {
+    height: auto;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+.paragraph p {
+    padding-top: 3em;
+    max-width: 700px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.9em;
+    color: #999999;
+    letter-spacing: 1.05px;
+    line-height: 30px;
+    text-align: justify;
 }

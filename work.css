@@ -71,6 +71,12 @@ main {
     background-position: center;
 }
 
+.text {
+    color: white;
+    text-align: center;
+    padding-top: 5em;
+}
+
 @media (min-width: 800px) {
     .projects2 {
         display: grid;

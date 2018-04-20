@@ -80,25 +80,22 @@ main {
 @media (min-width: 800px) {
     .projects2 {
         display: grid;
-        grid-template-columns: repeat(1, minmax(1fr, 300px));
+        grid-template-columns: repeat(2, (2fr, 50%));
         /* doesn't work as expected */
-        grid-template-rows: 50px 50px 50px;
+        grid-template-rows: 50px;
         height: 500px;
         position: relative;
     }
     .projects {
         display: grid;
-        grid-template-columns: repeat(2, auto);
-        /* totally works! */
-        grid-template-rows: 50px 50px 50px;
+        grid-template-columns: repeat(2, 50%);
         height: 500px;
         position: relative;
     }
     .projects3 {
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(2, 50%);
         /* totally works! */
-        grid-template-rows: 50px 50px 50px;
         height: 500px;
         position: relative;
     }

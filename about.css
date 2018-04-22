@@ -17,7 +17,7 @@ body {
 
 h2 {
     font-size: 2.5em;
-    text-align: left;
+    text-align: center;
     padding-top: 3em;
     max-width: 700px;
 }
@@ -39,4 +39,31 @@ h2 {
     letter-spacing: 1.05px;
     line-height: 30px;
     text-align: justify;
+}
+
+.btn {
+    padding-top: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-btn {
+    padding: 25 55 25 55;
+    border: 2px solid #202020;
+    border-radius: 100px;
+    font-size: 0.8em;
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: 0.91px;
+    font-weight: 600;
+}
+
+.contact-btn:hover {
+    padding: 25 55 25 55;
+    background-color: #202020;
+    color: white;
+    border-radius: 100px;
+    font-size: 0.8em;
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: 0.91px;
+    font-weight: 600;
 }

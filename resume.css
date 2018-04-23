@@ -119,9 +119,8 @@
 
 .details {
     padding: 20px 30px;
-    width: relative;
-    border-radius: 6px;
     text-align: justify;
+    height: auto;
 }
 
 .title {
@@ -273,6 +272,8 @@
 
 .skillset {
     margin-top: -400px;
+    width: 100%;
+    display: flex;
 }
 
 #containerUI {
@@ -280,6 +281,126 @@
     width: 400px;
     height: 8px;
     position: relative;
+}
+
+
+/* Scroll bar */
+
+.start>.slideUp {
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-timing-function: ease right;
+    -webkit-animation-timing-function: ease right;
+    visibility: visible !important;
+}
+
+@keyframes slideUp {
+    100% {
+        opacity: 1;
+    }
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+.bargraph {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+}
+
+.bargraph ul.bars {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.bargraph ul.bars li {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 0;
+    margin: 10;
+    text-align-last: center;
+    font-weight: 200;
+    color: white;
+    line-height: 2em;
+    font-size: 13px;
+    z-index: 99;
+}
+
+.bargraph ul.bars li.bluebar {
+    background-color: #0184FF;
+}
+
+.bargraph ul.bars li.redbar {
+    background-color: #0184FF;
+}
+
+.bargraph ul.bars li.greenbar {
+    background-color: #0184FF;
+}
+
+.bargraph ul.bars li.orangebar {
+    background-color: #0184FF;
+}
+
+.bargraph ul.bars li.grapebar {
+    background-color: #0184FF;
+}
+
+.bargraph ul.bars li.purplebar {
+    background-color: #0184FF;
+}
+
+.bargraph ul.bars li.crimsonbar {
+    background-color: #0184FF;
+}
+
+.bargraph ul.bars li.navybar {
+    background-color: #0184FF;
+}
+
+.bargraph ul.bars li.goldbar {
+    background-color: #0184FF;
+}
+
+.bargraph ul.bars li.tealbar {
+    background-color: #0184FF;
+}
+
+.label {
+    bottom: 0px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.label li {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.9em;
+    width: 150px;
+    overflow: hidden;
+    line-height: 2.9em;
+}
+
+.bargraph p {
+    position: relative;
+    left: 0;
+    top: 236px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    font-size: 10px;
+    color: black;
+    line-height: 1.3em;
 }
 
 
@@ -297,7 +418,16 @@
         padding-right: 25px;
         display: grid;
         grid-template-columns: repeat(1, 100%);
-        height: 500px;
+        height: auto;
+        position: relative;
+    }
+    .container2 {
+        width: 80%;
+        padding-left: 50px;
+        padding-right: 25px;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        height: auto;
         position: relative;
     }
     /* Make sure that all arrows are pointing leftwards */
@@ -316,4 +446,18 @@
     .right {
         left: 0%;
     }
+}
+
+.bargraph ul.bars li {
+    position: relative;
+    height: 30px;
+    border-radius: 10px;
+    padding: 0;
+    margin: 10;
+    text-align-last: center;
+    font-weight: 200;
+    color: white;
+    line-height: 2em;
+    font-size: 13px;
+    z-index: 99;
 }

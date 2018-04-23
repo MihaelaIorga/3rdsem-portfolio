@@ -21,6 +21,7 @@ header {
     height: 2em;
     padding-top: 30px;
     vertical-align: middle;
+    z-index: 1000;
 }
 
 .left {
@@ -84,4 +85,16 @@ header a:focus {
     height: inherit;
     justify-content: center;
     margin: 0;
+}
+
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+
+.sticky {
+    position: fixed;
+    width: 94%;
+    margin-right: 100px;
+    background-image: url('../img/stickyh.png');
+    height: 65px;
+    margin-top: -10;
 }

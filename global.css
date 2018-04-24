@@ -14,20 +14,19 @@ body {
     height: 100%;
 }
 
-header {
-    display: inline-grid;
-    grid-template-columns: 7fr 3fr 6fr;
+nav {
     width: 100%;
     height: 2em;
     padding-top: 30px;
     vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
     z-index: 1000;
 }
 
-.left {
-    display: grid;
-    grid-template-columns: auto;
-    width: 100%;
+.topnav .left {
+    display: flex;
+    width: auto;
     height: inherit;
     align-items: left;
     justify-content: left;
@@ -37,26 +36,28 @@ header {
 
 .center {
     vertical-align: center;
-    display: grid;
-    grid-template-columns: auto;
-    width: 100%;
+    display: flex;
+    width: auto;
     height: inherit;
-    align-items: center;
-    justify-content: center;
-    margin-left: -20px;
+    color: black !important;
+    font-size: 1.6em !important;
+    line-height: 0.8;
+    font-weight: 600 !important;
+    padding-left: 100px;
 }
 
 .right {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     width: auto;
     height: inherit;
-    align-items: right;
-    text-align: right;
-    padding-left: 300px;
+    padding-left: 20px;
 }
 
-header a {
+.right a {
+    padding-left: 20px;
+}
+
+.topnav a {
     text-decoration: none;
     padding-top: 10px;
     color: #B1B1B1;
@@ -64,19 +65,19 @@ header a {
     font-size: 1em;
 }
 
-header a:hover {
+.topnav a:hover {
     color: black;
 }
 
-header a:focus {
+.topnav a:focus {
     color: black;
 }
 
-.active {
+.topnav .active {
     color: black;
 }
 
-#logo {
+.logo {
     font-family: 'Raleway', sans-serif;
     font-size: 1.7em;
     font-weight: 600;
@@ -97,4 +98,85 @@ header a:focus {
     background-image: url('../img/stickyh.png');
     height: 65px;
     margin-top: -10;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav {
+        padding-top: 10px;
+    }
+    .topnav a:not(.logo) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .center {
+        vertical-align: center;
+        display: flex;
+        width: auto;
+        height: inherit;
+        color: black !important;
+        font-size: 1.6em !important;
+        line-height: 0.8;
+        font-weight: 600 !important;
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav .responsive {
+        height: 100%;
+    }
+    .responsive {
+        position: relative;
+        background-color: white;
+        background-image: none !important;
+        width: 100%;
+        height: 20px;
+        padding-top: 30px;
+        vertical-align: middle;
+        display: block !important;
+        text-align: center;
+    }
+}
+
+.topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+
+.topnav.responsive .logo {
+    padding-top: 20px;
+    display: block;
+}
+
+.topnav.responsive .left {
+    padding-top: 20px;
+    display: block;
+    text-align: center;
+}
+
+.topnav.responsive .center {
+    padding-top: 20px;
+    display: none;
+}
+
+.topnav.responsive .right {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.topnav.responsive .right a {
+    padding-left: 0;
+    margin-left: 0;
+    padding-top: 20px;
+    display: block;
+    text-align: center;
 }

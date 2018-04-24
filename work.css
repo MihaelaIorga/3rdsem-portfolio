@@ -31,6 +31,10 @@ main {
     opacity: 0.9;
 }
 
+.box:focus .overlay {
+    opacity: 0.9;
+}
+
 .portfolio2 {
     background-color: #F7F9FC;
 }

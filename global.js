@@ -45,3 +45,20 @@ function myFunction() {
         header.classList.remove("sticky");
     }
 }
+
+
+
+
+
+
+//responsive header
+
+function myNav() {
+    var x = document.getElementById("myHeader");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+
+    } else {
+        x.className = "topnav";
+    }
+}

@@ -41,6 +41,10 @@
     grid-template-columns: repeat(2, 50%);
     height: auto;
     position: relative;
+    padding-bottom: 8em;
+}
+.container:last-child{
+    padding-bottom: 40px;
 }
 
 
@@ -262,10 +266,6 @@
     font-weight: 600;
 }
 
-#myDIV {
-    display: none;
-}
-
 .headline .skills {
     padding-top: 2em;
 }
@@ -448,6 +448,13 @@
     }
 }
 
+
+.scroll2{display: none;}
+.hide{display: none;}
+.timeline{overflow: hidden;}
+.jobitem{opacity: 0; transition: opacity 1s linear;}
+.jobitem.show{display: grid; opacity: 1;}
+
 .bargraph ul.bars li {
     position: relative;
     height: 30px;
@@ -461,3 +468,4 @@
     font-size: 13px;
     z-index: 99;
 }
+

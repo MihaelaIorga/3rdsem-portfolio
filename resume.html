@@ -36,11 +36,11 @@
 
     <main>
         <section class="headline">
-            <h1>— Work experience & Education.</h1>
+            <h1>— Work experience &amp; Education.</h1>
         </section>
         <section>
             <div class="timeline">
-                <div class="container right">
+                <div id="timelineItem1" class="container right jobitem show">
                     <div class="content">
                         <h3 class="title">UI/UX Designer</h3>
                         <h3 class="company">Smart Payments A/S</h3>
@@ -66,10 +66,9 @@
                         <p class="edit">**Later edit — The Digital Lab Department became Smart Payments A/S starting with October 2017**</p>
                     </div>
                 </div>
-                <br><br><br><br>
-                <div class="container right">
+                <div id="timelineItem2" class="container right jobitem">
                     <div class="content">
-                        <h3 class="title">UI/UX & Visual Designer</h3>
+                        <h3 class="title">UI/UX &amp; Visual Designer</h3>
                         <h3 class="company">Nustay A/S</h3>
                         <h3 class="location">Copenhagen - Denmark</h3>
                         <h3 class="period">May 2017 - January 2018</h3>
@@ -82,44 +81,44 @@
                         <p class="normal"><strong>Visual Design</strong> - - SoMe animated banners, videos, presentation documents, etc.</p>
                     </div>
                 </div>
-                <div id="myDIV">
-                    <div class="container right">
-                        <div class="content">
-                            <h3 class="title">UI/UX & Visual Designer</h3>
-                            <h3 class="company">Nustay A/S</h3>
-                            <h3 class="location">Copenhagen - Denmark</h3>
-                            <h3 class="period">May 2017 - January 2018</h3>
+                <div id="timelineItem3" class="container right jobitem">
+                    <div class="content">
+                        <h3 class="title">UI/UX &amp; Visual Designer</h3>
+                        <h3 class="company">Nustay A/S</h3>
+                        <h3 class="location">Copenhagen - Denmark</h3>
+                        <h3 class="period">May 2017 - January 2018</h3>
 
-                        </div>
-
-                        <div class="details">
-                            <p class="normal"><strong>User Interface</strong> - I designed (from paper sketch to invision prototype) a B2B traveling platform that allows managers to create teams and keep track of each member’s traveling data (bookings, budget, reports, etc.) in a transparent way, with the purpose to cut out time and 3rd parties whenever an employee needs to book a business trip.</p>
-
-                            <p class="normal"><strong>Visual Design</strong> - - SoMe animated banners, videos, presentation documents, etc.</p>
-                        </div>
                     </div>
-                    <br><br><br><br>
-                    <div class="container right">
-                        <div class="content">
-                            <h3 class="title">UI/UX & Visual Designer</h3>
-                            <h3 class="company">Nustay A/S</h3>
-                            <h3 class="location">Copenhagen - Denmark</h3>
-                            <h3 class="period">May 2017 - January 2018</h3>
 
-                        </div>
+                    <div class="details">
+                        <p class="normal"><strong>User Interface</strong> - I designed (from paper sketch to invision prototype) a B2B traveling platform that allows managers to create teams and keep track of each member’s traveling data (bookings, budget, reports, etc.) in a transparent way, with the purpose to cut out time and 3rd parties whenever an employee needs to book a business trip.</p>
 
-                        <div class="details">
-                            <p class="normal"><strong>User Interface</strong> - I designed (from paper sketch to invision prototype) a B2B traveling platform that allows managers to create teams and keep track of each member’s traveling data (bookings, budget, reports, etc.) in a transparent way, with the purpose to cut out time and 3rd parties whenever an employee needs to book a business trip.</p>
-
-                            <p class="normal"><strong>Visual Design</strong> - - SoMe animated banners, videos, presentation documents, etc.</p>
-                        </div>
+                        <p class="normal"><strong>Visual Design</strong> - - SoMe animated banners, videos, presentation documents, etc.</p>
                     </div>
                 </div>
+                <div id="timelineItem4" class="container right jobitem">
+                    <div class="content">
+                        <h3 class="title">UI/UX &amp; Visual Designer</h3>
+                        <h3 class="company">Nustay A/S</h3>
+                        <h3 class="location">Copenhagen - Denmark</h3>
+                        <h3 class="period">May 2017 - January 2018</h3>
 
+                    </div>
+
+                    <div class="details">
+                        <p class="normal"><strong>User Interface</strong> - I designed (from paper sketch to invision prototype) a B2B traveling platform that allows managers to create teams and keep track of each member’s traveling data (bookings, budget, reports, etc.) in a transparent way, with the purpose to cut out time and 3rd parties whenever an employee needs to book a business trip.</p>
+
+                        <p class="normal"><strong>Visual Design</strong> - - SoMe animated banners, videos, presentation documents, etc.</p>
+                    </div>
+                </div>
             </div>
 
             <div class="btn">
-                <button onClick="myClick()" class="contact-btn">See more</button>
+                <a class="text-center scroll2" data-easing="easeInOutCubic" href="#timelineItem1">&amp;</a>
+                <a class="text-center scroll2" data-easing="easeInOutCubic" href="#timelineItem2">&amp;</a>
+                <a class="text-center scroll2" data-easing="easeInOutCubic" href="#timelineItem3">&amp;</a>
+                <a class="text-center scroll2" data-easing="easeInOutCubic" href="#timelineItem4">&amp;</a>
+                <button onclick="showMore()" class="contact-btn showMoreBtn">See more</button>
             </div>
 
             <div class="timeline2">
@@ -142,7 +141,7 @@
         </section>
 
         <section class="headline">
-            <h1 class="skills">— Skills, tools & methods</h1>
+            <h1 class="skills">— Skills, tools &amp; methods</h1>
         </section>
         <div class="skillset">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

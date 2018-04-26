@@ -9,7 +9,7 @@ main {
 
 .headline h1 {
     font-size: 3.2em;
-    padding-top: 3.9em;
+    padding-top: 4.2em;
 }
 
 .text h2 {
@@ -35,12 +35,24 @@ main {
     opacity: 0.9;
 }
 
+.portfolio {
+    background-color: #0a73ff;
+}
+
 .portfolio2 {
     background-color: #F7F9FC;
 }
 
 .portfolio3 {
-    background-color: #F7F8FA;
+    background-color: #f5f6f8;
+}
+
+.portfolio4 {
+    background-color: #b29bf5;
+}
+
+.portfolio5 {
+    background-color: #fafafa;
 }
 
 .product-small-img {
@@ -81,7 +93,15 @@ main {
     padding-top: 5em;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
+    .headline {
+        height: 70%;
+        text-align: center;
+    }
+    .headline h1 {
+        font-size: 3.2em;
+        padding-top: 4.2em;
+    }
     .projects2 {
         display: grid;
         grid-template-columns: repeat(2, (2fr, 50%));

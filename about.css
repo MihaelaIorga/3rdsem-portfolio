@@ -55,6 +55,7 @@ h2 {
     font-family: 'Fira Sans', sans-serif;
     letter-spacing: 0.91px;
     font-weight: 600;
+    outline: none;
 }
 
 .contact-btn:hover {

@@ -4,7 +4,7 @@
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: -300px;
+    margin-top: 0px;
 }
 
 .timeline2 {
@@ -43,7 +43,8 @@
     position: relative;
     padding-bottom: 8em;
 }
-.container:last-child{
+
+.container:last-child {
     padding-bottom: 40px;
 }
 
@@ -162,7 +163,7 @@
 
 .location {
     font-family: 'Fira Sans', sans-serif;
-    font-size: 19px;
+    font-size: 16px;
     color: #0083FF;
     letter-spacing: 3.5px;
     text-transform: uppercase;
@@ -174,7 +175,7 @@
 
 .location2 {
     font-family: 'Fira Sans', sans-serif;
-    font-size: 19px;
+    font-size: 16px;
     color: #B45EFF;
     letter-spacing: 3.5px;
     text-transform: uppercase;
@@ -186,7 +187,7 @@
 
 .period {
     font-family: 'Fira Sans', sans-serif;
-    font-size: 19px;
+    font-size: 14px;
     color: #0083FF;
     letter-spacing: 3.5px;
     margin: 0;
@@ -198,7 +199,7 @@
 
 .period2 {
     font-family: 'Fira Sans', sans-serif;
-    font-size: 19px;
+    font-size: 14px;
     color: #B45EFF;
     letter-spacing: 3.5px;
     margin: 0;
@@ -240,6 +241,7 @@
     padding-top: 3em;
     display: flex;
     justify-content: center;
+    outline: none;
 }
 
 .contact-btn {
@@ -253,6 +255,7 @@
     color: #0083FF;
     margin-top: 50px;
     margin-bottom: 50px;
+    outline: none;
 }
 
 .contact-btn:hover {
@@ -271,7 +274,7 @@
 }
 
 .skillset {
-    margin-top: -400px;
+    margin-top: -200px;
     width: 100%;
     display: flex;
 }
@@ -407,6 +410,11 @@
 /* Media queries - Responsive timeline on screens less than 600px wide */
 
 @media screen and (max-width: 600px) {
+    .skillset {
+        margin-top: -350px;
+        width: 100%;
+        display: flex;
+    }
     /* Place the timelime to the left */
     .timeline::after {
         left: 28px;
@@ -448,12 +456,27 @@
     }
 }
 
+.scroll2 {
+    display: none;
+}
 
-.scroll2{display: none;}
-.hide{display: none;}
-.timeline{overflow: hidden;}
-.jobitem{opacity: 0; transition: opacity 1s linear;}
-.jobitem.show{display: grid; opacity: 1;}
+.hide {
+    display: none;
+}
+
+.timeline {
+    overflow: hidden;
+}
+
+.jobitem {
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+.jobitem.show {
+    display: grid;
+    opacity: 1;
+}
 
 .bargraph ul.bars li {
     position: relative;
@@ -468,4 +491,3 @@
     font-size: 13px;
     z-index: 99;
 }
-

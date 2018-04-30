@@ -1,29 +1,173 @@
+body {}
 
-body {
-	background-color: #000;
-}
 html,
 body {
-	height: 100%;
+    height: 100%;
 }
-.imagebg {
-	background-image: url("images/typewriter-801921_1920.jpg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	background-attachment: fixed;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	-webkit-filter: blur(3px);
-  filter: blur(3px);
-  opacity: 0.6;
-  filter: alpha(opacity=60);
+
+.form-container {
+    margin-top: 50px;
+    padding-left: 220px;
+    padding-right: 220px;
+    background-color: #fff;
+    margin-bottom: 100px;
 }
-.form-container
-{
-	background-color: #fff;
-    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 20px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+
+.form-group {
+    display: block;
+    width: 100%;
+    padding-top: 10px;
+    height: auto;
+}
+
+.row {
+    display: block;
+    text-align: center;
+}
+
+.form-control {
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+}
+
+input {
+    width: 350px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 0.8em;
+    font-weight: 200;
+    border: 1px solid #202020;
+    color: #202020;
+}
+
+textarea {
+    padding-top: 20px;
+    width: 350px;
+    height: 200px !important;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 0.8em;
+    font-weight: 200;
+    border: 1px solid #202020;
+    color: #202020;
+}
+
+.form-btn {
+    margin-top: 30px;
+    padding: 25px 55px 25px 55px;
+    border: 2px solid #202020;
+    border-radius: 100px;
+    font-size: 0.8em;
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: 0.91px;
+    font-weight: 600;
+    outline: none;
+}
+
+.form-btn:hover {
+    padding: 25px 55px 25px 55px;
+    background-color: #202020;
+    color: white;
+    border-radius: 100px;
+    font-size: 0.8em;
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: 0.91px;
+    font-weight: 600;
+}
+
+div {
+    animation: rotate-all 2s 0 infinite linear alternate;
+}
+
+.div1 {
+    width: 20px;
+    height: 20px;
+    background-color: #0184FF;
+    position: relative;
+    margin: auto;
+    animation: square-to-circle 2.5s .5s infinite cubic-bezier(1, .015, .295, 1.225) alternate-reverse;
+}
+
+.div2 {
+    width: 20px;
+    height: 20px;
+    background-color: #0184FF;
+    position: relative;
+    margin: auto;
+    animation: square-to-circle2 2.5s .42s infinite cubic-bezier(1, .015, .295, 1.225) alternate-reverse;
+}
+
+#one {
+    top: 20px;
+}
+
+#two {
+    top: 20px;
+    right: 20px;
+}
+
+#three {
+    top: 20px;
+}
+
+#four {
+    bottom: 20px;
+    left: 20px;
+}
+
+@keyframes square-to-circle {
+    0% {
+        border-radius: 0 0 0 0;
+        background: ;
+        transform: rotate(45deg);
+    }
+    25% {
+        border-radius: 50% 0 0 0;
+        background: #B45EFF;
+        transform: rotate(135deg);
+    }
+    50% {
+        border-radius: 50% 50% 0 0;
+        background: #5E79FF;
+        transform: rotate(180deg);
+    }
+    75% {
+        border-radius: 50% 50% 50% 0;
+        background: lightcoral;
+        transform: rotate(315deg);
+    }
+    100% {
+        border-radius: 50%;
+        background: #B45EFF;
+        transform: rotate(404deg);
+    }
+}
+
+@keyframes square-to-circle2 {
+    0% {
+        border-radius: 0 0 0 0;
+        background: ;
+        transform: rotate(45deg);
+    }
+    25% {
+        border-radius: 0 0 50% 0;
+        background: #B45EFF;
+        transform: rotate(135deg);
+    }
+    50% {
+        border-radius: 0 0 50% 50%;
+        background: #5E79FF;
+        transform: rotate(180deg);
+    }
+    75% {
+        border-radius: 50% 0 50% 50%;
+        background: lightcoral;
+        transform: rotate(315deg);
+    }
+    100% {
+        border-radius: 50%;
+        background: #B45EFF;
+        transform: rotate(404deg);
+    }
 }
